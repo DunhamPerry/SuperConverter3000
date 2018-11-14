@@ -31,7 +31,7 @@ public class timeZoneConverter
 			System.out.println("20) NZST (New Zealand Standard Time)"); //+12
 			System.out.println("21) CHAST (Chatham Standard Time)"); //+12:45
 			System.out.println("22) TOT (Tonga Time)"); //+13
-			System.out.println("23)  ()");
+			System.out.println("23) LINT (Line Islands Time)"); //+14
 			System.out.println("24)  ()");
 			System.out.println("25)  ()");
 			System.out.println("26)  ()");
