@@ -67,7 +67,7 @@ public class Main
 	        		   break; 
 	        		   
 	        	   case 9:
-	        		   VolumeConverter.volumeConverter(); 
+	        		   VolumeConverter.VolumeConverter(); 
 	        		   break;
 	        		  
 	        	   case 10:
@@ -158,7 +158,7 @@ public class Main
 			{
 			try
 				{
-					Thread.sleep(1000);
+					Thread.sleep(500);
 				}
 				catch (InterruptedException e)
 				{
