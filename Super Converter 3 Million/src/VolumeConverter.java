@@ -1,9 +1,10 @@
+
 import java.util.Scanner;
 
 public class VolumeConverter
 	{
 
-		public static void volumeConverter()
+		public static void main(String[] args)
 			{
 				
 				String [] unit = new String[6];
@@ -25,7 +26,8 @@ public class VolumeConverter
 					}
 				int initialUnit = userInput.nextInt();
 				
-				//Final Unit
+				//Final Units
+			
 				System.out.println("Which unit are you converting to?");
 				for(int i = 0; i < unit.length; i++)
 					{
@@ -33,8 +35,8 @@ public class VolumeConverter
 					}
 				int finalUnit = userInput.nextInt();
 				
-				
 				//Conversions
+				
 				if(initialUnit == finalUnit)
 					{
 						System.out.println("How many " + unit[initialUnit - 1] + " would you like to convert to " + unit[finalUnit - 1] + "?" );
@@ -47,7 +49,6 @@ public class VolumeConverter
 					}
 				
 				double num = userInput.nextDouble();
-				
 				
 				//Liters
 				if(initialUnit == 1 && finalUnit == 2)
@@ -83,7 +84,7 @@ public class VolumeConverter
 				
 				
 				//Milliliters
-				if(initialUnit == 2 && finalUnit == 1)
+				else if(initialUnit == 2 && finalUnit == 1)
 					{
 						double convert = num/1000;
 						System.out.println("There are " + convert + " liters in " + num + " milliliters.");
@@ -113,7 +114,8 @@ public class VolumeConverter
 						double convert = num/3785.412;
 						System.out.println("There are " + convert + " gallons in " + num + " milliliters.");
 					}
-      
+				
+				
 				//Ounces
 				else if(initialUnit == 3 && finalUnit == 1)
 					{
@@ -246,7 +248,6 @@ public class VolumeConverter
 						double convert = num*4;
 						System.out.println("There are " + convert + " quarts in " + num + " gallons.");
 					}
-
 			}
 
 	}
